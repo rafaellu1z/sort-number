@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">SortNumber</string>
-    <string name="dado_1">Dado 1</string>
-    <string name="dado_2">Dado 2</string>
+    <string name="texto_dado_1">Dado 1</string>
+    <string name="texto_dado_2">Dado 2</string>
 </resources>
