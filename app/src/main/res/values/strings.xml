@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SortNumber</string>
-    <string name="texto_dado_1">Dado 1</string>
-    <string name="texto_dado_2">Dado 2</string>
+    <string name="app_name">Jogo da Sorte</string>
+    <string name="welcome">Bom jogo! %s</string>
+    <string name="name">Nome</string>
 </resources>

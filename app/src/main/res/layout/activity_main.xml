@@ -6,44 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="116dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="90dp"
+        android:text="Bom jogo !"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/dado1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/dado1"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="237dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="51dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="98dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
         app:layout_constraintEnd_toStartOf="@+id/dado2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
         app:srcCompat="@drawable/dice_1" />
 
     <ImageView
         android:id="@+id/dado2"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="237dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="51dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dado1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dado1"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dado1"
         app:srcCompat="@drawable/dice_3" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="218dp"
+        android:id="@+id/playGame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@color/green_red_color_state"
         android:text="Jogar"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dado2" />
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="43dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/playGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dado1"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
