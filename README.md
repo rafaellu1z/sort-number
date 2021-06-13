@@ -13,7 +13,7 @@ separar as imagens de igual tamanho e resolução, fazer o layout do programa.<b
   <p>O jogo basicamente utiliza uma função para gerar um resultado aleatorio dos dados e exibir o resultado ao jogador.</p>
   <p>Também existe um botão para compartilhar o resultado no WhatsApp se este estiver instalado.</p>
   <h3>Telas do aplicativo</h3><br>
-  <img src="https://user-images.githubusercontent.com/67242342/121821722-1f187780-cc71-11eb-9e67-6e17a7ac0ea6.png" />
-  <img src="https://user-images.githubusercontent.com/67242342/121821756-6c94e480-cc71-11eb-8a91-d81c4b1361a6.png" />
+  <img src="https://user-images.githubusercontent.com/67242342/121823410-8804ed00-cc7b-11eb-9a1e-9caac1993b29.png" />
+  <img src="https://user-images.githubusercontent.com/67242342/121823435-a0750780-cc7b-11eb-8b91-e1ee17ec65fe.png" />
 </span>
 
