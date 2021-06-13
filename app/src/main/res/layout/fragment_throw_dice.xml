@@ -68,8 +68,7 @@
         app:layout_constraintBottom_toTopOf="@+id/playGame"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dado1"
-        app:srcCompat="@android:drawable/alert_dark_frame"
         tools:src="?attr/actionModeShareDrawable"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@android:drawable/ic_menu_share" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

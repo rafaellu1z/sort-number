@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.devventure.sortnumber.databinding.FragmentThrowDiceBinding
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ThrowDiceFragment : Fragment() {
     private var binding: FragmentThrowDiceBinding? = null
@@ -25,7 +24,7 @@ class ThrowDiceFragment : Fragment() {
         val welcomeText = binding?.welcomeText
         val shareButton = binding?.floatingActionButton
 
-        welcomeText?.text = "Bom jogo ${arguments?.getString("playerName")}!"
+        welcomeText?.text = "Good lucky ${arguments?.getString("playerName")}!"
 
         val images = listOf(R.drawable.dice_1,R.drawable.dice_2,R.drawable.dice_3,R.drawable.dice_4,R.drawable.dice_5,R.drawable.dice_6)
 
@@ -36,7 +35,7 @@ class ThrowDiceFragment : Fragment() {
 
         shareButton?.setOnClickListener{
             val intent = Intent(Intent.ACTION_SEND)
-            intent.putExtra(Intent.EXTRA_TEXT, "Você é sortudo !!!")
+            intent.putExtra(Intent.EXTRA_TEXT, "You are a lucky person !!!")
             intent.setPackage("com.whatsapp")
             intent.type = "text/plain"
 
@@ -44,7 +43,7 @@ class ThrowDiceFragment : Fragment() {
                 if (intent.resolveActivity(this) != null){
                     startActivity(intent)
                 } else {
-                    Toast.makeText(context, "Você não tem o WhatsApp instalado",
+                    Toast.makeText(context, "You don´t have the WhatsApp application installed",
                         Toast.LENGTH_LONG).show()
                 }
             }

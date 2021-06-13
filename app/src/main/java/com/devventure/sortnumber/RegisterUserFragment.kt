@@ -1,6 +1,5 @@
 package com.devventure.sortnumber
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -22,11 +21,11 @@ class RegisterUserFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentRegisterUserBinding.inflate(inflater, container, false)
-        var playerName = binding?.playerName
-        var registerPlayer = binding?.registerPlayer
+        val playerName = binding?.playerName
+        val registerPlayer = binding?.registerPlayer
 
         registerPlayer?.setOnClickListener{
-            var player = playerName?.text.toString()
+            val player = playerName?.text.toString()
             findNavController().navigate(R.id.action_registerUserFragment_to_throwDiceFragment2, bundleOf("playerName" to player))
         }
         return binding?.root
