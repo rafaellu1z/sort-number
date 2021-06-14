@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.devventure.sortnumber.databinding.FragmentThrowDiceBinding
+import kotlinx.coroutines.delay
 
 class ThrowDiceFragment : Fragment() {
     private var binding: FragmentThrowDiceBinding? = null
@@ -30,7 +31,9 @@ class ThrowDiceFragment : Fragment() {
 
         btn?.setOnClickListener{
             dado01?.setImageResource(images.random())
+            dado01?.animate()?.rotation(dado01.rotation - 720)?.start()
             dado02?.setImageResource(images.random())
+            dado02?.animate()?.rotation(dado02.rotation - 720)?.start()
         }
 
         shareButton?.setOnClickListener{
